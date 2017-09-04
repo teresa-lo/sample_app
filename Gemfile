@@ -31,6 +31,7 @@ gem 'test-unit', '~> 3.0'
 # and rake tasks are available in development mode:
 group :development  do
   gem "rspec-rails", "~> 3.5.2"
+  
 end
 
 group :test  do
