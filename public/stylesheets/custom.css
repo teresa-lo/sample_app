@@ -1,0 +1,39 @@
+.container{
+    width: 710px;
+}
+body{
+    background: #cff;
+}
+header{
+    padding-top: 20px;
+}
+header img{
+    padding: 1em;
+    background: white;
+}
+section{
+    margin-top: 1em;
+    font-size: 120%;
+    padding: 20px;
+    background: #fff;
+}
+a{
+    color: #09C;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    color: #069;
+}
+
+a:visited{
+    color: #069;
+}
+
+nav{
+    float: right;
+    background: white;
+    padding: 0 0.7em;
+    white-space: nowrap;
+}
+
