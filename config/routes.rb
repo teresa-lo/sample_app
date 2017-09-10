@@ -3,18 +3,8 @@ FirstApp::Application.routes.draw do
   match '/contact', to: "pages#contact"
   match '/about', to: "pages#about"
   match '/help', to: "pages#help"
-  get "pages/home"
+  match '/signup', to: "users#new"
 
-  get "pages/contact"
-
-  resources :microposts
-
-
-  resources :users
-
-  get "pages/home"
-  get "pages/about"
-  get "pages/help"
 
 
   # The priority is based upon order of creation:
