@@ -9,7 +9,7 @@ gem 'mysql2', '~> 0.3.18'
 # gem 'prototype-rails'
 gem 'activerecord-native_db_types_override'
 
-
+gem 'test-unit', '~> 3.0'
 # Use unicorn as the web server
 # gem 'unicorn'
 
@@ -30,6 +30,7 @@ gem 'activerecord-native_db_types_override'
 # and rake tasks are available in development mode:
 group :development  do
   gem "rspec-rails", "~> 3.5.2"
+  gem "annotate"
 
 end
 
