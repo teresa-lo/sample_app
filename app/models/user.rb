@@ -10,6 +10,7 @@
 #
 
 class User < ActiveRecord::Base
+  attr_accessor :password
   attr_accessible :email, :name
   has_many :microposts
 
@@ -20,5 +21,7 @@ class User < ActiveRecord::Base
                     :format => {:with => email_regrex},
                     :uniqueness => {:case_sensitive => false}
 
-
+  validates :password, :presence => true,
+                      :confirmation => true,
+                      :length => {:within => 6..40}
 end
