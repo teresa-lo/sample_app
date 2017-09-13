@@ -22,9 +22,8 @@ class User < ActiveRecord::Base
                     :format => {:with => email_regrex},
                     :uniqueness => {:case_sensitive => false}
 
-  validates :password, :presence => true,
-                      :confirmation => true
-  before_save :encrypt_password
+  #validates :password, :presence => true
+  #before_save :encrypt_password
 
   def has_password?(submitted_password)
     encrypted_password == encrypt(submitted_password)
